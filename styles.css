@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
 
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif; */
 :root {
     --Soft-red: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
@@ -10,21 +8,23 @@ font-family: 'Fraunces', serif; */
     --dark-moderate-cyan: hsl(168, 34%, 41%);
     --nav: #3dbefe;
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
---very-dark-grayish-blue: hsl(213, 9%, 39%);
---dark-grayish-blue: hsl(232, 10%, 55%);
-- Grayish blue: hsl(210, 4%, 67%)
-- White: hsl(0, 0%, 100%)
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
 
 }
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
-/* body, html {
-    height: 3000px;
-} */
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+}
 
 nav {
     position: fixed;
@@ -63,7 +63,7 @@ nav > div {
 }
 
 .nav-left {
-    color: white;
+    color: var(--white);
     font-weight: 600;
     font-size: 22px;
 
@@ -95,8 +95,7 @@ main {
 }
 
 .main-page > h1 {
-    color: white;
-    font-family: 'Fraunces', serif;
+    color: var(--white);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 36px;
