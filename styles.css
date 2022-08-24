@@ -92,14 +92,31 @@ p {
 
 .nav-right a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-weight: 100;
 }
 
 .nav-left a img {
     width: 8rem;
-
 }
+
+.hero-section header nav ul li:nth-child(4) a{
+    padding: .6rem 1rem;
+    font-family: 'Fraunces', serif;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-dark-desaturated-blue);
+    background: var(--white);
+    border-radius: 2rem;
+    transition: 0.25s;
+}
+
+.hero-section header nav ul li:nth-child(4) a:hover{
+    background: hsla(0, 0%, 100%, 0.37);
+    color: var(--white);
+}
+
 
 /* .mobile-view-navigation{
     display: none;
@@ -155,7 +172,7 @@ p {
     font-family: 'Fraunces', serif; 
     font-weight: 900;       
     color: var(--very-dark-desaturated-blue);   
-    font-size: 2.9rem;
+    /* font-size: 2.9rem; */
     margin-bottom: 1.5rem;
     line-height: 1;
 }
@@ -480,6 +497,11 @@ footer > ul > li > a:hover img{
         align-items: center;
         justify-content: center;
     }
+
+    .services-grid > div:nth-child(1) h2,
+    .services-grid > div:nth-child(4) h2 { 
+        font-size: 1.9rem;
+    }
     
     .graphic-design > div,
     .photography > div {
@@ -498,7 +520,7 @@ footer > ul > li > a:hover img{
     }
 
     .graphic-design {
-        height: 100vh;
+        /* height: 100vh; */
         background: url(images/mobile/image-graphic-design.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -506,7 +528,7 @@ footer > ul > li > a:hover img{
     }
     
     .photography {
-        height: 100vh;
+        /* height: 100vh; */
         background: url(images/mobile/image-photography.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -562,6 +584,11 @@ footer > ul > li > a:hover img{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .services-grid > div:nth-child(1) h2,
+    .services-grid > div:nth-child(4) h2 { 
+        font-size: 2.5rem;
     }
 
 
@@ -621,7 +648,7 @@ footer > ul > li > a:hover img{
         text-align: center;
         padding: 2rem;
         z-index: 10;
-        width: 90%;
+        width: 85%;
     }
 
     .mobile-view-navigation::after{
@@ -670,10 +697,6 @@ footer > ul > li > a:hover img{
         text-align: left;
     }
     
-    .hero-section h1 {
-
-    }
-    
     .client-testimonials{
         display: flex;
         /* width: 80%; */
@@ -681,6 +704,11 @@ footer > ul > li > a:hover img{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .services-grid > div:nth-child(1) h2,
+    .services-grid > div:nth-child(4) h2 { 
+        font-size: 2.9rem;
     }
 
     .graphic-design > div > h3,
